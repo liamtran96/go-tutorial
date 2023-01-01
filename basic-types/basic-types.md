@@ -28,7 +28,7 @@ complex64 complex128
 
 ## Zero values: có thể hiểu là giá trị mặc định
 
-```
+```go
 package main
 
 import "fmt"
@@ -47,7 +47,7 @@ func main() {
 The expression T(v) converts the value v to the type T.
 
 Some numeric conversions:
-```
+```go
 var i int = 42
 var f float64 = float64(i)
 var u uint = uint(f)
@@ -60,7 +60,7 @@ u := uint(f)
 ```
 
 - Chú ý khi ép kiểu từ to xuống nhỏ nếu dữ liệu lớn hơn thì có thể dẫn đến vấn đề
-```
+```go
 package main
 
 import (

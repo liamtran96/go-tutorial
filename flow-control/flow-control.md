@@ -4,7 +4,7 @@
 - for: k có dấu ngoặc tròn
 - golang k có while: sử dụng for như while
 
-```
+```go
   package main
 
 import "fmt"
@@ -24,7 +24,7 @@ func main() {
 - k có dấu ngoặc tròn như for
 - short hand của if: vừa khai báo vừa khởi tạo 
 
-```
+```go
   package main
 
 import (
@@ -52,7 +52,7 @@ func main() {
 
 - Định nghĩa: Các câu lệnh phía sau từ khoá defer sẽ đc thực thi ngay sau khi hàm kết thúc(return)
 
-```
+```go
 package main
 
 import "fmt"
