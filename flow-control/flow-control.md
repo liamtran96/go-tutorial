@@ -47,3 +47,45 @@ func main() {
 }
 
 ```
+
+# Key word "defer" trong golang
+
+- Định nghĩa: Các câu lệnh phía sau từ khoá defer sẽ đc thực thi ngay sau khi hàm kết thúc(return)
+
+```
+package main
+
+import "fmt"
+
+func main() {
+	defer fmt.Println("world")
+
+	fmt.Println("hello")
+}
+// hello 
+// world
+```
+
+## stacking defer
+
+- Cơ chế stacking defer là khi gọi nhiêu defer cùng lúc thì thằng nào vào trc ra sau (firt in last out) 
+
+```
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("counting")
+
+	for i := 0; i < 10; i++ {
+		defer fmt.Println(i)
+	}
+
+	fmt.Println("done")
+}
+
+//done 
+// counting
+// 9 => 0
+```
